@@ -6,10 +6,10 @@ import matplotlib.dates as mdates
 
 
 # Download the stock data for a given ticker
-ticker1 = "TNT-UN.TO" #  "HTA.TO"
-ticker2 = "AP-UN.TO" # "XQQ.TO"
-start_date = "2016-01-01"
-end_date = "2023-02-01"
+ticker1 = input("Enter the first stock ticker symbol: ")
+ticker2 = input("Enter the second stock ticker symbol: ")
+start_date = input("Enter the start date (yyyy-mm-dd): ")
+end_date = input("Enter the end date (yyyy-mm-dd): ")
 data1 = yf.download(ticker1, start=start_date, end=end_date, actions=True)
 data2 = yf.download(ticker2, start=start_date, end=end_date, actions=True)
 
